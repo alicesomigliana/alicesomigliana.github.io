@@ -1,0 +1,206 @@
+<!DOCTYPE html> 
+	<html> 	
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title> Alice Somigliana </title>
+			<link rel="stylesheet" type="text/css" href="style.css"></link>
+			<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4968b82ae5.js" crossorigin="anonymous"></script>
+		</head>
+
+		<body> 
+
+			<section class="sub-header">
+
+				<nav>
+
+					<div class="nav-lin" id="navLinks">
+
+						<i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="myresearch.html">MY RESEARCH</a></li>
+							<li><a href="other.html">OTHER ACTIVITIES</a></li>
+							<li><a href="personal.html">PERSONAL</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+
+					</div>
+
+					<i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+
+				</nav>
+			
+				<h1> Personal </h1>
+
+			</section>
+
+			<!------- Personal content------>
+
+
+
+			<section class="personal">
+				<h1> Selected pictures from work travels </h1>
+				<p> One of the side benefits of astronomy in my opinion is definitely the opportunity
+					to visit many amazing places all around the world. Here are some highlights from the 
+					work trips I took in the past couple of years.  </p>
+			
+				<div class="row">
+					<div class="personal-col">
+						<img src="images/Personal/paris22.JPG">
+						<h3> Paris 2022 </h3>
+						<p> Montmartre, a lovely weekend before the first ECOGAL workshop in Paris - May 2022</p>
+					</div>
+
+
+					<div class="personal-col">
+						<img src="images/Personal/dustbusters22.png">
+						<h3> Gargnano 2022 </h3>
+						<p> The view from the conference venue at the first Dustbusters summer school,
+							in Gargnano, Italy - May 2022</p>
+					</div>
+
+									
+					<div class="personal-col">
+						<img src="images/Personal/florence22.png">
+						<h3> Florence 2022 </h3>
+						<p> Boboli gardens in summer - June 2022</p>
+					</div>
+		
+
+				</div>
+			
+			</section>
+
+
+
+			<section class="personal">
+
+				<div class="row">
+
+
+					<div class="personal-col">
+						<img src="images/Personal/leiden23.png">
+						<h3> Leiden 2023 </h3>
+						<p> Pretty leaves and crazy humidity at the Leiden botanical graden - January 2023</p>
+					</div>
+
+
+					<div class="personal-col">
+						<img src="images/Personal/paris23.JPG">
+						<h3> Paris 2023 </h3>
+						<p> Looking for the best Eiffel tower view on the second ECOGAL workshop in Paris 
+							- May 2023
+						</p>
+					</div>
+
+
+					<div class="personal-col">
+						<img src="images/Personal/eas23.JPG">
+						<h3> Krakow 2023 </h3>
+						<p> In front of the EAS 2023 venue, in Krakow - July 2023</p>
+					</div>
+
+				</section>
+
+
+
+
+				<section class="personal">
+					<h1> Hobbies </h1>
+					<p> A selection of the definitely not work-related hobbies I enjoy the most :)  </p>
+				
+					<div class="row">
+						<div class="personal-col">
+							<img src="images/Personal/crochetclub.jpg">
+							<h3> Textile crafts </h3>
+							<p> I am a passionate crafter and I have a particular inclination for everything textile-related.
+								I especially enjoy crocheting, knitting and sewing, which I think reach their full joyful 
+								potential when shared. In this picture, the awesome ESO crochet club on Secret Santa day in 2022.
+							</p>
+						</div>
+
+
+						<div class="personal-col">
+							<img src="images/Personal/bladenight.JPG">
+							<h3> Skating </h3>
+							<p> I really enjoy inline skating, even though I'm by no means an expert - I just learned how to brake 
+								on my own a couple of months ago! In this picture I'm at one of the awesome Munich Blade Nights with
+								some ESO and Max Planck friends in July 2023.</p>
+						</div>
+
+										
+						<div class="personal-col">
+							<img src="images/Personal/hiking.JPG">
+							<h3> Hiking </h3>
+							<p> I spent countless summers in my childhood and as a teenager in the beautiful italian Alps,
+								so I'm very happy whenever I get the chance to go hiking near the austrian border or around one 
+								of the many lakes in Bavaria. This picture is from a winter hike in January 2023, with the whole ESO gang.
+							</p>
+						</div>
+			
+
+					</div>
+				
+				</section>
+
+
+
+
+
+
+
+
+		<!-------------- Footer ---------------->
+
+		<section class="footer">
+			<h4> You can find me on </h4>
+
+			<div class="icons">
+
+				<a href="https://github.com/alicesomigliana" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://orcid.org/0000-0003-2090-2928" target="_blank"><i class="fa-brands fa-orcid"></i></a>
+				<a href="https://twitter.com/alicesomigliana" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/alicesomigliana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+			</div>
+
+			<p> <i class="fa-regular fa-copyright"></i> 2023 Alice Somigliana </p>
+
+		</section>
+
+
+
+		<!-------JavaScript for Toggle Menu-------->
+			
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function unfade(element) {
+    			var op = 0.1;  // initial opacity
+    			element.style.display = 'block';
+    			var timer = setInterval(function () {
+        			if (op >= 1){
+            			clearInterval(timer);
+        			}
+        			element.style.opacity = op;
+        			element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        			op += op * 0.05;
+    				}, 10);
+				}
+
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+
+			
+		</script>
+
+		</body> 
+	</html> 

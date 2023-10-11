@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+	<html> 	
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title> Alice Somigliana </title>
+			<link rel="stylesheet" type="text/css" href="style.css"></link>
+			<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4968b82ae5.js" crossorigin="anonymous"></script>
+		</head>
+
+		<body> 
+
+			<section class="sub-header">
+
+				<nav>
+
+					<div class="nav-lin" id="navLinks">
+
+						<i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="myresearch.html">MY RESEARCH</a></li>
+							<li><a href="other.html">OTHER ACTIVITIES</a></li>
+							<li><a href="personal.html">PERSONAL</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+
+					</div>
+
+					<i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+
+				</nav>
+			
+				<h1> My Research </h1>
+
+			</section>
+
+			<!------- my research content------>
+
+			<section class="my-research">
+
+				<p> My main research interest is protoplanetary discs, the environments where planets form.
+					I am particularly keen to understanding the physical mechanisms that drive their evolution and
+					consequent accretion of material onto the central protostar. To investigate this, I mostly rely on
+					simulations (see the section Diskpop below) and analytical calculations, that allow us to test our
+					theoretical expectations once compared with the observational data. Below, you will find a short 
+					description of the main projects I am currently working on, as well as a selection of the past ones.
+				</p>
+
+
+				<div class="my-research-col-left">
+
+					<h1> Diskpop and popcorn </h1>
+
+					<p>
+						A significant part of my research relies of disc population synthesis, which I perform using the Python 1D code Diskpop and its
+						own output analysis library, popcorn. I am one of the main active developers of both codes, and we are planning to release
+						them soon with a paper I am currently writing. If you are interested in knowing more, as the codes are not public yet, feel
+						free to <a href = "mailto:alice.somigliana@eso.org">contact me</a>.
+						
+					</p>
+
+				</div>
+
+
+				<div class="my-research-col-right">
+					<h1> Viscous vs MHD evolution </h1>
+				</div>
+
+				<div class="row">
+					<div class="my-research-col-narrow-left">
+						<div class="circular-portrait">
+							<img src="images/Research/Paper3.png" width="100%"/>
+						</div>
+					</div>
+					<div class="my-research-col-large-right">
+					
+						<p style="width: 100%; padding-left: 0%;"> 
+							
+						In the second project of my PhD I focused on the difference between the two main paradigms for protoplanetary disc evolution,
+						namely viscosity and magnetohydrodynamic disc winds. In particular, I focused on the evolution of the distribution
+						of the ratio between the disc mass and the accretion rate, a quantity often referred to as 'disc lifetime'. 
+						I found that both the theoretical spread and skewness of the distribution are significantly model-dependent: 
+						once convolved with the observational uncertainties, the difference in the spread remains appreciable, providing a novel
+						way to distinguish between the two evolutionary models. This work is published in ApJL (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...954L..13S/abstract" target="_blank">Somigliana et al. 2023</a>).
+					
+					</p>
+
+					</div>
+				</div>
+				
+				
+				
+				<div class="row">
+					<div class="my-research-col-large-left">
+
+						<h1> Evolution of the disc properties-stellar mass correlations </h1>
+
+						<p> 
+							In the first project of my PhD (started during my Master's thesis, supervised by Prof. Giuseppe Lodato at the University 
+							of Milan and Dr. Giovanni Rosotti at the University of Leicester) I performed an analytical and numerical study of 
+							the observed power-law correlations between the stellar mass and the disc properties (mainly disc mass and accretion rate).
+							I assumed the correlations to hold as initial conditions and analysed the impact of pure viscous evolution, finding that
+							the power-law shape is maintained while the slope are meant to reach the same value after a long enough time. This can
+							happen either because they both increase, they both decrease, or they remain constant depending on their initial value. 
+							The observed increase in the slopes (Ansdell et al. 2017) can be explained if the initial correlation between the disc and
+							the stellar mass is steeper than that between the accretion rate and the stellar mass. You can read more in
+					 		<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.5927S/abstract" target="_blank">Somigliana et al. 2022</a>.
+						</p>
+
+					</div>
+					<div class="my-research-col-narrow-right">
+						<div class="circular-portrait">
+							<img src="images/Research/Paper2.png" style="padding-top: 120px;">
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="my-research-col-right">
+					<h1> Impact of internal photoevaporation on disc isochrones </h1>
+				</div>
+				
+				<div class="row">
+					<div class="my-research-col-narrow-left">
+						<div class="circular-portrait">
+							<img src="images/Research/Paper1.png" width="200%">
+						</div>
+					</div>
+					<div class="my-research-col-large-right">
+					
+						<p> 
+							In my Bachelor's thesis, supervised by Prof. Giuseppe Lodato at the University of Milan, I studied the impact of internal
+							photoevaporation on the so-called protoplanetary disc 'isochrones' (i.e., the curves described by a population of objects
+							of the same age in a chosen plane) in the disc mass-accretion rate plane. I worked with an embryonal version of Diskpop, 
+							written in Fortran 95 (!), and included the photoevaporative UV and X prescriptions of Clarke et al. (2001) and Owen et al. (2012)
+							respectively. Internal photoevaporation acts as a disc dispersal mechanism and therefore plays a crucial role in viscous evolution,
+							which would otherwise generate discs with infinite lifetime.
+							
+							I found that photoevaporation reduces the accretion rate for discs of a given mass with respect to the
+							viscous counterpart: this effect modifies the linear shape (in the logarithmic plane), of isochrones, introducing a 'bending
+							knee' at accretion rates corresponding to the mass-loss rate. This introduces a spread in accretion rates, that cannot be explained
+							with purely viscous evolution. Moreover, I found that less massive discs are preferentially removed; this leads to the counterintuitive
+							effect of an increase of the average disc mass over time. You can read more about this in 
+							<a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.1120S/abstract" target="_blank">Somigliana et al. 2020</a>.
+						</p>
+
+					</div>
+				</div>
+				
+				
+
+
+
+				<h1> ECOGAL </h1>
+				
+				<div class='row'>
+					<div class="my-research-col-narrow-left">
+						<div class="circular-portrait">
+							<img src="images/Research/ecogal.png">
+						</div>
+					</div>
+					
+					<div class="my-research-col-large-right">
+
+					<p> 
+						My PhD is funded through the ERC Synergy Grant ECOGAL (PIs Leonardo Testi, Sergio Molinari, Ralf Klessen, 
+						Patrick Hennebelle). ECOGAL is an ambitious project that aims at building the first predictive model for the galactic ecosystem,
+						bridging a variety of different spatial scales - including the very small ones of protoplanetary discs and planetary systems, 
+						which my group focuses on. For more information on the projects, check out <a href="http://www.ecogal.eu" target="_blank">the ECOGAL website</a>.
+					</p>
+
+					</div>
+
+				</div>
+
+				
+	
+
+
+
+				
+				
+
+
+
+
+			</section>
+
+
+
+
+
+
+
+		<!-------------- Footer ---------------->
+
+		<section class="footer">
+			<h4> Find me on </h4>
+
+			<div class="icons">
+
+				<a href="https://github.com/alicesomigliana" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://orcid.org/0000-0003-2090-2928" target="_blank"><i class="fa-brands fa-orcid"></i></a>
+				<a href="https://twitter.com/alicesomigliana" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/alicesomigliana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+			</div>
+
+			<p> <i class="fa-regular fa-copyright"></i> 2023 Alice Somigliana </p>
+
+		</section>
+
+
+
+		<!-------JavaScript for Toggle Menu-------->
+			
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function unfade(element) {
+    			var op = 0.1;  // initial opacity
+    			element.style.display = 'block';
+    			var timer = setInterval(function () {
+        			if (op >= 1){
+            			clearInterval(timer);
+        			}
+        			element.style.opacity = op;
+        			element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        			op += op * 0.05;
+    				}, 10);
+				}
+
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+
+			
+		</script>
+
+		</body> 
+	</html> 
