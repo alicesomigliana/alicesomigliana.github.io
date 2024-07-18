@@ -4,13 +4,6 @@
 		font-family: 'Raleway', sans-serif;
 	}
 
-	.center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	  }
-	  
 	.header{
 		min-height: 100vh;
 		width: 100%;
@@ -90,7 +83,7 @@
 
 	.text-box-contact{
 		width: 90%;
-		background-color: rgba(223, 165, 175, 0.8);
+		background-color: rgba(223, 165, 175, 0.3);
 		color: #DFA5AF;
 		height:fit-content;
 		width: 60%;
@@ -102,28 +95,15 @@
 		text-align: center;
 	}
 
-	.text-box-contact a{
-		font-size: 24px;
-	}
-
 	.text-box-contact h1{
 		font-size: 102px;
 		color: white;
-		text-shadow: -1px -1px 0 #DFA5AF, 
-				1px -1px 0 #DFA5AF,
-				-1px 1px 0 #DFA5AF,
-				1px 1px 0 #DFA5AF;
-	}
-
-	.text-box-contact h2{
-		font-size: 32px;
-		color: white;
-		padding-bottom: 2%;
 	}
 
 	.text-box-contact p{
 		margin: 10px 0 40 px;
 		font-size: 24px;
+		padding-top: 20px;
 		color: white;
 	}
 
@@ -448,7 +428,7 @@
 		padding-left: 0%;
 	}
 
-	.other-col-left p{
+	.miscellanea-col-left p{
 		font-size: 20px;
 		text-align: left;
 		width: 100%;
@@ -471,7 +451,7 @@
 		padding-top: 2%;
 	}
 
-	.other-col-right p{
+	.miscellanea-col-right p{
 		font-size: 20px;
 		text-align: right;
 		width: 100%;
@@ -554,8 +534,6 @@
 	.other-col-narrow-left img{
 		width: 100%;
 	}
-		
-
 
 
 
@@ -640,30 +618,13 @@
 
 	/*-------------- Media query --------------*/
 
-	@media(max-width: 800px){
+	@media(max-width: 700px){
 		.text-box h1{
 			font-size: 30px;
 		}
 
-		.text-box-contact{
-			width: fit-content;
-			height: fit-content;
-			background-color: rgba(223, 165, 175, 0.8);
-			background-size:contain;
-		}
-
 		.text-box-contact h1{
-			padding-top: 10%;
-			font-size: 50px;
-		}
-
-		.text-box-contact h2{
-			padding-top: 5%;
-			font-size: 20px;
-			margin-left: 5%;
-			margin-right: 5%;
-			color: white;
-			padding-bottom: 2%;
+			font-size: 30px;
 		}
 
 		.text-box p{
@@ -672,10 +633,6 @@
 
 		.text-box-contact p{
 			font-size: 15px;
-			margin-left: 5%;
-			margin-right: 5%;
-			padding-top: 0%;
-			padding-bottom: 0%;
 		}
 
 		.text-credits p{
@@ -718,12 +675,17 @@
 			flex-direction: column;
 		}
 
-
-		.other-col-left{
-			flex-direction: column;
-
+		.my-research h1{
+			font-size: 18px;
 		}
 
+		.my-research p{
+			font-size: 12px;
+		}
+
+		.cta h1{
+			font-size: 24px;
+		}
 
 		.sub-header h1{
 			text-align: right;
