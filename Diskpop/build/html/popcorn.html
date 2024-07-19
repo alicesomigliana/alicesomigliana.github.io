@@ -7,7 +7,7 @@
   <title>4. popcorn &mdash; Diskpop 0.0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/_static/css/personalise.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/personalise.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -179,18 +179,8 @@ in the parameters.json file) as it <em>recovers</em> the parameter from the simu
 <li><p><strong>mstar</strong>: stellar masses [<span class="math notranslate nohighlight">\(M_{\odot}\)</span>], 2D (mstar[i][j] is the stellar mass at the i-th timestep of the j-th object).</p></li>
 <li><p><strong>mdisc</strong>: disc gas masses [<span class="math notranslate nohighlight">\(M_{\odot}\)</span>], 2D (same as mstar).</p></li>
 <li><p><strong>mdot</strong>: accretion rate on the star [<span class="math notranslate nohighlight">\(M_{\odot}\)</span>/yr], 2D (same as mstar)</p></li>
-<li><p><strong>sigma_g</strong>: gas surface density at all disc radii [g/cm^2], 3D (sigma_g[i][j][k] is the surface density of the j-th object</p></li>
-</ul>
-<blockquote>
-<div><p>at the i-th timestep in the k-th radial location).</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>tacc0_Myr</strong>: initial accretion timescale (viscous timescale in the viscous case) [Myr], 1D (tacc0_Myr[i] is the</p></li>
-</ul>
-<blockquote>
-<div><p>initial accretion timescale of the i-th object).</p>
-</div></blockquote>
-<ul class="simple">
+<li><p><strong>sigma_g</strong>: gas surface density at all disc radii [g/cm^2], 3D (sigma_g[i][j][k] is the surface density of the j-th object at the i-th timestep in the k-th radial location).</p></li>
+<li><p><strong>tacc0_Myr</strong>: initial accretion timescale (viscous timescale in the viscous case) [Myr], 1D (tacc0_Myr[i] is the initial accretion timescale of the i-th object).</p></li>
 <li><p><strong>Rd</strong>: disc gas radius [au], 2D (same as mstar).</p></li>
 <li><p><strong>mask</strong>: boolean mask on the object type, containing <cite>True</cite> if Class II and <cite>False</cite> if Class III, 2D (same as mstar).</p></li>
 </ul>
