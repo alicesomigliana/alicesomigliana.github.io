@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+	<html> 	
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Prova provina</title>
+			<link rel="stylesheet" type="text/css" href="style2.css"></link>
+			<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4968b82ae5.js" crossorigin="anonymous"></script>
+		</head>
+		<body> 
+			<section class="header">
+				<nav>
+					<div class="nav-lin" id="navLinks">
+						<i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="">MY RESEARCH</a></li>
+							<li><a href="">MISCELLANEA</a></li>
+							<li><a href="">PERSONAL</a></li>
+							<li><a href="">CONTACT</a></li>
+						</ul>
+					</div>
+					<i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+				</nav>
+			
+			<div class="text-box">
+				<h1>Alice Somigliana</h1>
+				<p>Text text text text <br> qui ho spezzato <br>
+				</p>
+				<a href="" class="hero-btn">Ciao ciao ciaoo</a>
+			</div>
+				
+			</section>
+
+			<!--- Welcome -->
+
+			<section class="welcome">
+
+				<h1> Welcome! </h1>
+
+				<p> Welcome to my homepage! My name is Alice Somigliana and I am a second-year 
+					PhD student at the European Southern Observatory (ESO) in Garching bei Munchen, Germany.
+					Thank you for stopping by, I hope you enjoy your time here!
+				</p>
+
+
+				<div class="row">
+					<div class="welcome-col">
+
+						<h2> About me </h2>
+
+						<p> I was born and raised in beautiful Italy, where I studied for both my Bachelor's and 
+							Master's degrees. To pursue my passion for astrophysics and embark on the amazing adventure that is
+							the PhD, I moved to Germany in September 2021. You can find more about my academic path 
+							in the My research section.</p>
+							
+						<p> In my free time, I enjoy a lot of crafty activities such as crocheting, knitting and sewing.
+							I like to practice many sports, without being a pro in any of them, just for fun. This includes
+							hiking, volleyball, skating and biking. For a description of my hobbies and interests, see Personal.
+						</p>
+
+					</div>
+					<div class="welcome-col">
+						<img src="images/Picture.jpeg">
+					</div>
+				</div>
+
+
+			</section>
+
+			<!---------Campus ---------->
+
+			<section class="campus">
+				<h1>Our global campus</h1>
+				<p>Robaccia a casaccio</p>
+
+				<div class="row">
+					<div class="campus-col">
+						<img src="images/Picture.jpeg">
+						<div class="layer">
+							<h3>LONDON</h3>
+						</div>
+					</div>
+
+					<div class="campus-col">
+						<img src="images/Sfondo.jpeg">
+						<div class="layer">
+							<h3>NEW YORK</h3>
+						</div>
+					</div>
+
+					<div class="campus-col">
+						<img src="images/Picture.jpeg">
+						<div class="layer">
+							<h3>MUNICH</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-------- Facilities ------->
+
+		<section class="facilities">
+			<h1>Our Facilities</h1>
+			<p>Ancora un botto di testo</p>
+
+			<div class="row">
+				<div class="facilities-col">
+					<img src="images/Picture.jpeg">
+					<h3>Altra Roba a Caso</h3>
+					<p>Il testo della roba a caso</p>
+				</div>
+
+				<div class="facilities-col">
+					<img src="images/Picture.jpeg">
+					<h3>Altra Roba a Caso</h3>
+					<p>Il testo della roba a caso</p>
+				</div>
+
+				<div class="facilities-col">
+					<img src="images/Picture.jpeg">
+					<h3>Altra Roba a Caso</h3>
+					<p>Il testo della roba a caso</p>
+				</div>
+			</div>
+
+		</section>
+
+		<!-------- Testimonials -------->
+
+		<section class="testimonial">
+			<h1>What I want to write</h1>
+			<p>whatever I want</p>
+
+			<div class="row">
+				<div class="testimonial-col">
+					<img src="images/Sfondo.jpeg">
+					<div>
+						<p>Un botto di robaccia</p>
+					<h3>Tizio Caio</h3>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					</div>
+				</div>
+
+				<div class="testimonial-col">
+					<img src="images/Sfondo.jpeg">
+					<div>
+						<p>Un botto di robaccia<br></p>
+					<h3>Sempronio Caio</h3>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-------------- Call to Action ---------------->
+
+		<section class="cta">
+
+			<h1>Do whatever you want</h1>
+			<a href="" class="hero-btn">CONTACT US</a>
+
+		</section>
+
+
+		<!-------------- Footer ---------------->
+
+		<section class="footer">
+			<h4> You can find me on </h4>
+
+			<div class="icons">
+
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-linkedin"></i>
+				
+
+			</div>
+
+			<p> <i class="fa-regular fa-copyright"></i> 2023 Alice Somigliana </p>
+
+		</section>
+
+
+
+		<!-------JavaScript for Toggle Menu-------->
+			
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function unfade(element) {
+    			var op = 0.1;  // initial opacity
+    			element.style.display = 'block';
+    			var timer = setInterval(function () {
+        			if (op >= 1){
+            			clearInterval(timer);
+        			}
+        			element.style.opacity = op;
+        			element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        			op += op * 0.05;
+    				}, 10);
+				}
+
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+
+			
+		</script>
+
+		</body> 
+	</html> 
