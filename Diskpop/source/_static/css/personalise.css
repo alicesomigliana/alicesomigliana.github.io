@@ -1,0 +1,11 @@
+.center h1,
+.center h2 {
+    text-align: center;
+}
+
+.math {
+    text-align: left;
+}
+.eqno {
+    float: right;
+}
