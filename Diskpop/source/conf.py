@@ -80,7 +80,7 @@ def remove_default_value(app, what, name, obj, options, signature, return_annota
 #    app.connect("autodoc-process-signature", remove_default_value)
     
 def setup(app):
-  app.add_css_file( "/personalise.css" )
+  app.add_css_file( "_static/css/theme.css" )
 
 # -- Options for HTML output -------------------------------------------------
 
