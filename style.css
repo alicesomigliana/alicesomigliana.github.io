@@ -127,6 +127,13 @@
 		color: white;
 	}
 
+	.icons-contact .fa-brands{
+		color: #DFA5AF;
+		margin: 0 13px;
+		cursor: pointer;
+		padding: 10px 0 30px;
+	}
+
 	.text-credits{
 		width: 90%;
 		position: absolute;
@@ -166,7 +173,7 @@
 	/*------- Welcome Page -------*/
 
 	.welcome{
-		width: 70%;
+		width: 50%;
 		margin: auto;
 		text-align: center;
 		padding-top: 100px;
@@ -181,12 +188,26 @@
 		color: #DFA5AF;
 	}
 
+
+	.welcome h2{
+		text-align: center;
+		font-size: 30px;
+		font-weight: 600;
+		padding-left: 10px;
+		font-size: 23;
+		margin: 10px 0;
+		color: #DFA5AF;
+	}
+
+
 	.welcome p{
 		color: black;
+		width: 100%;
 		font-size: 20px;
 		font-weight: 300;
 		line-height: 22px;
-		padding-left: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
 		padding-top: 20px;
 		text-align: center;
 	}
@@ -214,8 +235,9 @@
 	}
 
 	.welcome-col-large p{
+		flex-basis: 100%;
 		font-size: 20px;
-		text-align: left;
+		text-align: left;	
 	}
 
 	.welcome-col-narrow{
@@ -224,7 +246,7 @@
 	}
 
 	.welcome-col-narrow img{
-		width: 50%;
+		width: 30%;
 		border-radius: 50%;
 	}
 
@@ -403,7 +425,7 @@
 
 
 
-	/*-------- Other Astivities -------*/
+	/*-------- Other Activities -------*/
 
 	.other{
 		width: 70%;
@@ -668,24 +690,73 @@
 
 	@media(max-width: 800px){
 		.text-box h1{
+			font-size: 70px;
+		}
+
+		.welcome{
+			width: 90%;
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+		}
+		
+		.welcome h1{
+			font-size: 40px;
+			font-weight: 600;
+			text-align: center;
+			padding-left: 10px;
+			padding-top: 30px;
+			color: #DFA5AF;
+		}
+	
+	
+		.welcome h2{
+			text-align: center;
 			font-size: 30px;
+			font-weight: 600;
+			padding-left: 10px;
+			font-size: 23;
+			margin: 10px 0;
+			color: #DFA5AF;
+		}
+	
+	
+		.welcome p{
+			color: black;
+			width: 100%;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 22px;
+			padding-left: 10px;
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.welcome-col-narrow{
+			flex-basis: 40%;
+			padding-top: 5%;
+		}
+	
+		.welcome-col-narrow img{
+			width: 50%;
+			border-radius: 50%;
 		}
 
 		.text-box-contact{
-			width: fit-content;
+			width: 100%;
 			height: fit-content;
 			background-color: rgba(223, 165, 175, 0.8);
 			background-size:contain;
 		}
 
 		.text-box-contact h1{
-			padding-top: 10%;
-			font-size: 50px;
+			padding-top: 5%;
+			font-size: 60px;
 		}
 
 		.text-box-contact h2{
 			padding-top: 5%;
-			font-size: 20px;
+			font-size: 25px;
 			margin-left: 5%;
 			margin-right: 5%;
 			color: white;
@@ -693,15 +764,29 @@
 		}
 
 		.text-box p{
-			font-size: 15px;
+			font-size: 25px;
 		}
 
 		.text-box-contact p{
-			font-size: 15px;
+			font-size: 18px;
 			margin-left: 5%;
 			margin-right: 5%;
 			padding-top: 0%;
 			padding-bottom: 0%;
+		}
+
+		.text-box-contact a{
+			padding-top: 20%;
+			font-size: 20px;
+			padding-bottom: 5%;
+		}
+
+		.icons-contact .fa-brands{
+			color: #DFA5AF;
+			margin: 0 13px;
+			cursor: pointer;
+			padding: 10px 0 30px;
+			font-size: 25px;
 		}
 
 		.text-credits p{
